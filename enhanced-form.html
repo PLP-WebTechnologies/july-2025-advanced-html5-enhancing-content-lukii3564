@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+    </head>
+<body>
+
+<header>
+    <h1>HTML5 Content & Form Enhancement</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with native validation.</p>
+</header>
+
+<main>
+    <!-- LIST SECTION -->
+    <section>
+        <h2>Course Topics</h2>
+        <ul>
+            <li>HTML & CSS Basics</li>
+            <li>JavaScript Fundamentals</li>
+            <li>Responsive Web Design</li>
+            <li>Forms and Validation</li>
+            <li>Media Integration</li>
+        </ul>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section>
+        <h2>Sample Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML & CSS</td>
+                    <td>3 hrs</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>JavaScript</td>
+                    <td>3 hrs</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Projects</td>
+                    <td>2 hrs</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section>
+        <h2>Media Examples</h2>
+        <img src="https://pixabay.com/photos/code-html-digital-coding-web-1076536/" alt="Sample Image">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" height="520" width="236" frameborder="0" scrolling="no"  type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+    </section>
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4" maxlength="15">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX" required pattern="^\+?\d{10,15}$">
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" value="Kenya" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the Terms and Conditions
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 its Luki. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
